@@ -1,0 +1,110 @@
+/* Reset and fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+body {
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header & marquee */
+header {
+  text-align: center;
+  padding: 2rem;
+  background: #ff7e5f;
+  color: white;
+}
+header img {
+  width: 120px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+marquee {
+  background-color: #ff4b2b;
+  color: white;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #ff6a00;
+  padding: 1rem;
+  gap: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: #333;
+}
+
+/* Section styling */
+section {
+  padding: 2rem;
+}
+h2 {
+  margin-bottom: 1rem;
+  color: #ff4b2b;
+}
+
+/* Skills section */
+.skill-bar {
+  margin: 1rem 0;
+}
+.skill-bar span {
+  display: inline-block;
+  width: 120px;
+}
+.bar {
+  display: inline-block;
+  height: 20px;
+  background-color: #fcb045;
+  border-radius: 10px;
+  animation: grow 2s ease-in-out;
+}
+.html { width: 90%; background-color: #e44d26; }
+.css { width: 85%; background-color: #264de4; }
+.js { width: 75%; background-color: #f0db4f; }
+.vb { width: 65%; background-color: #6a5acd; }
+.teamwork { width: 90%; background-color: #28a745; }
+
+@keyframes grow {
+  0% { width: 0; }
+}
+
+/* Projects */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 30%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #ff6a00;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
