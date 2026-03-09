@@ -94,6 +94,110 @@ h2 {
   transform: translateY(-10px);
 }
 
+.certificates-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.certificate-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 14px;
+  padding: 1.8rem 1.5rem 1.2rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-decoration: none;
+  color: #333;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid #00bfa5;
+}
+
+.certificate-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.14);
+}
+
+.certificate-badge {
+  background: linear-gradient(135deg, #00bfa5, #0288d1);
+  color: white;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.certificate-info {
+  text-align: center;
+  width: 100%;
+}
+
+.certificate-issuer {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #00897b;
+  font-weight: 600;
+}
+
+.certificate-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0.4rem 0 0.2rem;
+  direction: rtl;
+}
+
+.certificate-title-en {
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 0.8rem;
+}
+
+.certificate-courses {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+  font-size: 0.82rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+.certificate-courses li::before {
+  content: "✓ ";
+  color: #00bfa5;
+  font-weight: bold;
+}
+
+.certificate-date {
+  display: inline-block;
+  font-size: 0.78rem;
+  color: #999;
+  border-top: 1px solid #eee;
+  padding-top: 0.6rem;
+  width: 100%;
+}
+
+.certificate-view {
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #0288d1;
+  transition: color 0.2s;
+}
+
+.certificate-card:hover .certificate-view {
+  color: #01579b;
+}
+
 footer {
   text-align: center;
   background-color: #ff6a00;
